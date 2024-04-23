@@ -7,6 +7,7 @@ import Login from './components/Login';
 import Dashboard from './pages/Dashboard';
 import AnimalCadastro from './pages/AnimalCadastro';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/animalcadastro' element={<AnimalCadastro />} />
           <Route path='/animalcadastro/:id' element={<AnimalCadastro />} />
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

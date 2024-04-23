@@ -25,7 +25,7 @@ const Registro = () => {
       // Faça a solicitação POST usando Axios
       await axios.post('http://localhost:8080/cliente/add', formData);
       // Se a solicitação for bem-sucedida, você pode redirecionar o usuário ou mostrar uma mensagem de sucesso
-      console.log('Cliente registrado com sucesso!');
+      alert('Cliente registrado com sucesso!');
     } catch (error) {
       // Se houver um erro na solicitação, você pode lidar com isso aqui
       console.error('Erro ao registrar cliente:', error);

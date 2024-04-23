@@ -17,3 +17,12 @@
     color: #fff;
     text-decoration: none;
 }
+
+.navbar-brand{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+.navbar-brand span{
+    color: #333;
+}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import '../components/Navbar.css'
 import { useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { MdOutlinePets } from "react-icons/md";
 
 const Navbar = () => {
     const { pathname: route } = useLocation();
@@ -21,7 +22,7 @@ const Navbar = () => {
     return (
         <div>
             <nav className="container-navbar">
-                <Link to='/' className='navbar-brand'>PetshopSystem</Link>
+                <Link to='/' className='navbar-brand '>Petshop<span>System <MdOutlinePets /> </span> </Link> 
                 <div className="links">
                     {showRegister && <Link to='/registrar' className='btn btn-outline-light'>Registre-se</Link>}
                     <Link to='/dashboard' className='btn btn-outline-light'>Dashboard</Link>
